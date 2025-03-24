@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/Users/apple/Desktop/Data structures_desktop/H.W._DSA_2/calculator_app_dsa_assignement/venv_calculator/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from flask.cli import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())
